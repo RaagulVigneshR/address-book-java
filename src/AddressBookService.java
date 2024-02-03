@@ -1,33 +1,30 @@
 import java.util.Scanner;
-
 public class AddressBookService {
     public String display(Person p){
-        return p.getFirstname()+" "+p.getLastname()+" "+p.getCity()+" "+p.getState()+" "+p.getPhonenumber()+" "+p.getZip()+" "+p.getEmail();
+        return p.getFirstName()+" "+p.getLastName()+" "+p.getCity()+" "+p.getState()+" "+ p.getEmail()+" "+p.getPhoneNumber()+ " "+p.getZip();
     }
     public void setValues(Person p){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the First Name : ");
-        String fn = sc.next();
-        p.setFirstname(fn);
-        System.out.println("Enter the Last Name : ");
-        String ln = sc.next();
-        p.setLastname(ln);
-        System.out.println("Enter the City : ");
-        String c = sc.next();
-        p.setCity(c);
-        System.out.println("Enter the State : ");
-        String st = sc.next();
-        p.setState(st);
-        System.out.println("Enter the Phone Number : ");
-        Integer ph = sc.nextInt();
-        p.setPhonenumber(ph);
-        System.out.println("Enter the Zip : ");
-        Integer z = sc.nextInt();
-        p.setZip(z);
-        System.out.println("Enter the Email Address : ");
-        String em = sc.next();
-        p.setEmail(em);
-
-
+        System.out.println("Enter First Name");
+        String first = sc.next();
+        p.setFirstName(first);
+        System.out.println("Enter Last Name");
+        String last = sc.next();
+        p.setLastName(last);
+        System.out.println("Enter City");
+        String city = sc.next();
+        p.setCity(city);
+        System.out.println("Enter State");
+        String state = sc.next();
+        p.setState(state);
+        System.out.println("Enter Email");
+        String email = sc.next();
+        p.setEmail(email);
+        System.out.println("Enter Phone Number");
+        int phoneNo = sc.nextInt();
+        p.setPhoneNumber(phoneNo);
+        System.out.println("Enter zip");
+        int zip = sc.nextInt();
+        p.setZip(zip);
     }
 }

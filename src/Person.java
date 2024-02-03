@@ -1,65 +1,65 @@
 public class Person {
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     private String city;
-    private long phonenumber;
-    private long zip;
+    private String state;
+    private int zip;
+    private int phoneNumber;
     private String email;
-    private  String state;
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getCity() {
         return city;
     }
 
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     public String getState() {
         return state;
     }
 
-    public long getPhonenumber() {
-        return phonenumber;
+    public void setState(String state) {
+        this.state = state;
     }
 
-    public long getZip() {
+    public int getZip() {
         return zip;
+    }
+
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setPhonenumber(long phonenumber) {
-        this.phonenumber = phonenumber;
-    }
-
-    public void setZip(long zip) {
-        this.zip = zip;
-    }
-
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setState(String state) {
-        this.state = state;
     }
 }
